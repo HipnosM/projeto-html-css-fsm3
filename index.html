@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Alpha Libras</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <img id="logo" src="" alt="logo alpha libras">
+            <a href="/"><img id="logo" src="/assets/libras.png" width="45px" alt="logo alpha libras"></a>
 
             <form action="#" id="search">
                 <input type="search" placeholder="Pesquise aqui" required>
@@ -66,12 +67,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, odit non neque pariatur recusandae
                 ipsa, modi possimus fugiat rem totam sed ullam debitis culpa sunt, eveniet iste corrupti alias magni.
             </p>
-            <h2>Como surgiu a Língua Brasileira de Sinais?</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vszmxi_d3QY?si=SkDg0EtK1NoPxbXa"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>Vídeo mostrando como surgiu a Língua Brasileira de Sinais e a sua necessiade.</p>
+            <article>
+                <h3>Como surgiu a Língua Brasileira de Sinais?</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Vszmxi_d3QY?si=SkDg0EtK1NoPxbXa"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Vídeo mostrando como surgiu a Língua Brasileira de Sinais e a sua necessiade.</p>
+            </article>
         </section>
 
         <section id="alphabet">
@@ -186,6 +189,8 @@
                     <img src="/assets/alfabeto/z.png" alt="letra 'z' em libras">
                 </article>
             </div>
+            <p>Créditos: <a href="https://www.ces.org.br/site/vamos-aprender-libras.aspx" target="_blank">CES - Rio
+                    Branco</a></p>
         </section>
 
         <section id="videos">
@@ -214,7 +219,8 @@
                         <option value="other">Outro</option>
                     </select>
 
-                    <textarea name="message" id="message" placeholder="Digite sua mensagem aqui.." rows="8" required></textarea>
+                    <textarea name="message" id="message" placeholder="Digite sua mensagem aqui.." rows="8"
+                        required></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
