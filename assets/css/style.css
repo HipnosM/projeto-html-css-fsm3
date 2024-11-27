@@ -9,6 +9,11 @@ html {
     margin: 0;
     padding: 0;
     font-family: "Poppins", serif;
+    color: #141414;
+}
+
+body {
+    background-color: rgb(255, 208, 255);
 }
 
 header {
@@ -31,7 +36,8 @@ header nav {
         align-items: center;
         justify-content: center;
 
-        & input, button {
+        & input,
+        button {
             outline: none;
             border-radius: 0.25rem;
             border: 0.06rem solid #555;
@@ -54,6 +60,7 @@ header nav {
             text-decoration: none;
             padding: 4px 8px;
             border-radius: 0.25rem;
+
             &:hover {
                 background-color: rgb(0, 48, 135);
                 box-shadow: 2px 2px 4px #000;
@@ -63,24 +70,34 @@ header nav {
     }
 }
 
-main {
-    padding: 1.5rem 0.75rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    overflow: clip;
+#inicio,
+#about {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "left right";
+    gap: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
 
-    & #alphabet .letters {
-        display: flex;
-        gap: 0.62rem;
-        overflow: auto;
+    & .__aside {
+        grid-area: left;
+
+        & img {
+            max-width: 100%;
+        }
     }
-}
 
-section {
-    width: 100%;
-    max-width: 75rem;
-    margin: 0 auto;
+    & .__content {
+        grid-area: right;
+        display: flex;
+        flex-direction: column;
+        gap: .62rem;
+        height: 100%;
 
-    
+        & span {
+            font-size: 12px;
+        }
+    }
 }
