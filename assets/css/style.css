@@ -11,13 +11,18 @@ html {
     margin: 0;
     padding: 0;
     font-family: "Poppins", serif;
-    color: #141414;
 }
 
 header {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 2;
+}
+
+body {
+    color: #141414;
+    background-color: #dbdeef;
 }
 
 header nav {
@@ -90,11 +95,13 @@ main {
     width: 100%;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    
-    & .__aside {
+
+    & .hero__aside {
         width: 100%;
         background-color: #abb0cd;
         border-radius: 0 0 0 50%;
+        box-shadow: -2px -2px 2px 0px rgba(0, 0, 0, 0.5);
+        z-index: 1;
 
         & img {
             max-width: 100%;
@@ -108,9 +115,47 @@ main {
         background-color: #abb0cd;
         border-radius: 0 0% 50% 0;
         padding: 1rem;
+        box-shadow: -2px -2px 2px 0px rgba(0, 0, 0, 0.5);
 
         & p {
             width: 80%;
+        }
+    }
+}
+
+#about {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+
+    & .__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & .main__content {
+            background-color: #abb0cd;
+            padding: 1rem;
+            box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+
+            & img {
+                max-width: 100%;
+            }
+
+        }
+
+        & .__aside {
+            width: 100%;
+            color: #abb0cd;
+            background-color: #141414;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+            box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.5);
+
+            & span {
+                font-size: 12px;
+            }
         }
     }
 }
@@ -121,7 +166,7 @@ main {
         height: min-content;
 
         & #navigation {
-            flex-flow: row wrap; 
+            flex-flow: row wrap;
             padding: 10px 0;
         }
     }
@@ -132,7 +177,7 @@ main {
         flex-direction: column;
         padding: 1.5rem 0;
 
-        & .__aside {
+        & .hero__aside {
             border-radius: 50% 0 0 0;
         }
 
@@ -140,4 +185,17 @@ main {
             padding: 1.5rem;
         }
     }
+
+    #about {
+        padding: 1rem 0;
+
+        & .__content {
+            grid-template-columns: 1fr;
+            
+            &.main__content {
+                padding: 1.5rem;
+            }
+        }
+    }
+
 }
