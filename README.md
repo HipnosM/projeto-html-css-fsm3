@@ -1,4 +1,4 @@
-# <a href="https://HipnosM.github.io/alphalibras-fsm3/" target="_blank" >🔗AlphaLibras</a>
+# <a href="https://HipnosM.github.io/alphalibras-fsm3/" target="_blank">🔗AlphaLibras</a> _(Ctrl+Clique para abrir em nova aba)_
 
 ## Sobre o projeto
 - Foi desenvolvido ao final do módulo básico do curso de Full Stack do Capacita Brasil, sob supervisão do Mestre e Doutorando <strong>Eliakim Gama</strong>, somente usando HTML e CSS, e também, GIT para o versionamento.
